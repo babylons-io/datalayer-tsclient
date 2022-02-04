@@ -1,0 +1,23 @@
+{
+    "watch": [
+        "src",
+        ".env"
+    ],
+    "ext": "js,ts,json",
+    "ignore": [
+        "src/logs/*",
+        "src/**/*.{spec,test}.ts"
+    ],
+    "env":{
+        "Mics__QueryBaseGuid": "1b43a26e-5451-4c7f-91fb-0e4dfa7d57b2",
+        "Rabbitmq__PostgresqlReadQueue": "pg_read",
+        "Rabbitmq__PostgresqlWriteQueue": "pg_write",
+        "Rabbitmq__PostgresqlReadResultQueue": "pg_read_result",
+        "Rabbitmq__PostgresqlWriteResultQueue": "pg_write_result",
+        "Rabbitmq__Host": "localhost",
+        "Rabbitmq__Port": "5672",
+        "Rabbitmq__User": "rabbit_admin",
+        "Rabbitmq__Password": "ASD1122asd+-"
+    },
+    "exec": "ts-node -r tsconfig-paths/register --transpile-only src/app.ts"
+}
